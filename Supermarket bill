@@ -1,0 +1,31 @@
+rice=70
+biscuits=20
+chocolate=50
+grains=200
+icecream=50
+riceq=int(input('rice quantity:'))
+biscuitsq=int(input('biscuits quantity:'))
+chocolateq=int(input('chocolate quantity:'))
+grainsq=int(input('grains quantity:'))
+icecreamq=int(input('Icecream quantity:'))
+bill=(rice*riceq)+ (biscuits*biscuitsq)+ (chocolate*chocolateq)+ (grains*grainsq) + (icecream*icecreamq)
+if bill>=5000:
+   disc=bill*10/100
+   tax=bill*18/100
+elif bill>=4000:
+   disc=bill*8/100
+   tax=bill*18/100
+elif bill>=3000:
+    disc=bill*5/100
+    tax=bill*10/100
+elif bill>=2000:
+    disc=bill*3/100
+    tax=bill*10/100
+elif bill>=1000:
+    disc=bill*3/100
+    tax=bill*10/100
+else:
+    print('bill:',bill)
+    
+mainbill=bill-disc+tax
+print('mainbill:',mainbill)
